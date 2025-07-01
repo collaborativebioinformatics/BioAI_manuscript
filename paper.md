@@ -47,7 +47,7 @@ authors:
     orcid: 0000-0001-9573-0804
     affiliation: 1, 2
   - name: Nilabja Bhattacharjee 
-    orchid: 0009-0007-7752-6990
+    orcid: 0009-0007-7752-6990
     affiliation: 22
   - name: Joanna Borkowska
     orcid: 0009-0003-5503-1314
@@ -68,16 +68,13 @@ authors:
     orcid: 0009-0000-4626-3760
     affiliation: 22
   - name: Radosław Gersz
-    orcid:
     affiliation: 37
   - name: Paulina Kaczyńska
     orcid: 0000-0002-8690-8436
     affiliation: 16
   - name: Pu Kao
-    orchid:
     affiliation: 36
   - name: Fahad Ali Khan
-    orcid: 
     affiliation: 26
   - name: Mikolaj Kocikowski
     orcid: 0000-0001-7396-9005
@@ -107,7 +104,6 @@ authors:
     orcid: 0009-0009-2893-3631
     affiliation : 29
   - name: Weronika Plichta
-    orcid:
     affiliation: 25
   - name: Ammara Saleem
     orcid: 0009-0004-3754-8907
@@ -128,7 +124,6 @@ authors:
     orcid: 0000-0000-0000-0000
     affiliation: 11 
   - name: Aleksandra Sobieska
-    orcid: -
     affiliation: 39, 40, 41
   - name: Marek Sokołowski
     orcid: 0009-0009-3958-3526
@@ -200,7 +195,7 @@ affiliations:
   - name: Johns Hopkins University
     index: 28
   - name: Family Genomics Research Group, Department of Biology, Maynooth University, Ireland
-    index:29
+    index: 29
   - name: Institute of Zoology and Biomedical Research, Faculty of Biology, Jagiellonian University, Kraków, Poland
     index: 30
   - name: Institute of Zoology and Biomedical Research, Faculty of Biology, Jagiellonian University, Kraków, Poland
@@ -226,96 +221,90 @@ Parul University.India
     index: 40
   - name: Institute of Epigenetics and Stem Cells, Helmholtz Center Munich, Munich, Germany
     index: 41
-
-
    
-date: 
+date: May 15, 2025
 bibliography: paper.bib
-authors_short:  \emph{et al.}
-group: 
-event: 
-git_url: 
+authors_short: Ahmad R. M., Denkiewicz M., Gupta R., Gadakh S., Kubica J., Nadeem A., Olszewska A. M., Rossi F. \emph{et al.}
+event: BioAI Hackathon at the University of Warsaw 2025
+git_url: https://github.com/SFGLab
 ---
 
 #### \* These authors contributed equally
 
+# Abstract
+
+The BioAI Hackathon at the Centre of New Technologies at the University of Warsaw convened 43 international researchers to collaboratively explore artificial intelligence (AI) approaches for solving complex challenges in computational biology. Nine interdisciplinary and multi-institutional teams addressed the following problems: disease-gene prioritization, microbiome analysis, drug-protein interactions, alternative splicing prediction, chromatin architecture study and toxicological profiling. Using cutting-edge tools such as graph neural networks (GNNs), large language models (LLMs), and multi-omics integration frameworks, participants developed scalable and reproducible analytical pipelines. The results include a disease gene prioritization framework using GNNs, a microbiome dynamics analysis for poultry health prediction and the construction of chromatin structure-aware regulatory networks leveraging Hi-C and scRNA-seq data. All projects follow the open science principles and display translational potential. This hackathon underscores the transformative role of AI in biomedicine and the value of collaborative, time-bounded innovation for accelerating discovery in life sciences.
+
 # Introduction
 
+Recent advances in genomics, transcriptomics, epigenetics and systems biology have enabled an unprecedented capacity to collect and analyze biological data. These high-throughput technologies generate vast datasets that hold the key to understanding human health and disease. However, the volume, complexity, and heterogeneity of biomedical data pose significant challenges. To address them, artificial intelligence (AI), particularly machine learning (ML) and deep learning (DL) algorithms, have become increasingly useful in extracting meaningful biological insights.
+
+During the BioAI Hackathon at the University of Warsaw, participants explored novel AI-based solutions, including graph neural networks and large language models, for the following challenges: disease-gene prioritization, microbiome dynamics analysis, drug discovery for rare disease, study of splicing regulation, epigenomics data harmonization, investigation of chromatin reorganization and toxicological profiling. All projects are publicly available on GitHub: https://github.com/SFGLab 
 
 ## Code Availability
 
-Team name: link
+Team 1: Prioritizing disease-associated genes using graph neural networks: https://github.com/SFGLab/Team1_Gene_Prioritization_GNN 
 
+Team 2: AI-Driven Microbiome Analysis for Predicting Poultry Health and Performance: https://github.com/SFGLab/Team2_AI_Microbiome_Poultry
 
-## Virus Susceptibility
+Team 4: AI-Driven Prediction of Drug-Protein Interactions for Rare Diseases: https://github.com/SFGLab/Team4_AI_Drug_Targets_Rare_Diseases
 
+Team 5: Phasing structural variants using phased aligned data: https://github.com/SFGLab/SvPhaser
 
-## Graph-Based Tuning
+Team 6: Leveraging LLMs for alternative splicing studies: https://github.com/SFGLab/Team6_LLM_Splicing_Studies
 
+Team 7: Harmonization and imputation of epigenomics data – exposome: https://github.com/SFGLab/EpiXposome
 
-# Flow diagrams
+Team 8: Discovering cell cycle phase-specific chromatin conformation changes based on single cell Hi-C and multi-omics data: https://github.com/SFGLab/Team8_PhaseSpecific_Chromatin_Changes
 
-## Virus Susceptibility
+Team 9: Advanced Modeling of Toxicological Profiles: https://github.com/SFGLab/Team9_Toxicological_Profiles
 
-![Figure 1. Virus Susceptibility workflow.](./figures/virus_susceptibility_workflow.png)\
-**Figure 1.** Virus Susceptibility workflow.
+Team 10: Developing graph neural networks for gene regulation discovery: https://github.com/SFGLab/GNN4GRN-3D 
 
-## Graph Based Tuning
+## Team 1: Prioritizing disease-associated genes using graph neural networks
 
-![Figure 2.Graph Based Tuning workflow.](./figures/graph_based_tuning_workflow.png)\
-**Figure 2.** Graph Based Tuning workflow.
+Medical genomics aims at finding genes related to diseases. Experimental studies are often laborious and expensive, therefore bioinformatics methods are useful in the prioritization of candidate disease-associated genes (Shi et al. 2020). Recent bioinformatics methods based on machine learning, such as graph neural networks (GNNs), are increasingly popular (Ata et al. 2021; Zitnik et al. 2024). GNNs are expected to offer improved performance by recognizing complex network patterns and leveraging additional biological information. The increasing number of GNN-based methods requires further understanding of how they compare to the state-of-the-art network propagation methods such as Random Walk with Restart (Baptista et al. 2022; Köhler et al. 2008) or PageRank (Page et al. 1999; Chung and Zhao 2010). Compared to network propagation, the usability of GNNs is often limited due to high computational requirements and issues with interpretability. During the hackathon, we aimed at comparing the performance of graph neural networks with network propagation methods (Cowen et al. 2017). As for the use case, we focused on genes involved in hereditary ataxia, a group of rare neurodegenerative disorders characterized by progressive loss of coordination and balance (Perlman 1993; Park et al. 2022).
 
-## VCFs to Knowledge Graphs
+## Team 2: AI-Driven Microbiome Analysis for Predicting Poultry Health and Performance
 
-![Figure 3. VCFs to Knowledge Graphs workflow.](./figures/vcfs_to_knowledge_graphs_workflow.png)\
-**Figure 3.** VCFs to Knowledge Graphs workflow.
+The gut microbiome plays a critical role in shaping poultry growth, nutrient absorption, immune function, and disease resistance, making it a promising target for data-driven performance optimization strategies in livestock production (Kogut and Arsenault 2016). Traditional microbiome analyses, however, often fall short in capturing the high-dimensional complexity and dynamic variability of microbial ecosystems. To address this, Team 2 developed an AI-powered pipeline that integrates next-generation sequencing data with advanced machine learning models to predict poultry health and performance outcomes. By leveraging both 16S rRNA amplicon and shotgun metagenomic datasets, the approach aims to uncover microbial biomarkers and compositional patterns linked to productive traits, laying the groundwork for precision microbiome engineering in poultry farming (Gilbert et al. 2016).
 
-## Knowledge Graph Based Validation
+## Team 4: RARExDrug: AI-Driven Prediction of Drug-Protein Interactions for Rare Diseases
 
-![Figure 4. Knowledge Graph Based Validation workflow.](./figures/knowledge_graphs_based_validation_workflow.png)\
-**Figure 4.** Knowledge Graph Based Validation workflow.
+RARExDrug aims to bridge the huge disparity between millions of existing drug-like molecules and the lack of treatment in nine-tenth of rare diseases. By leveraging existing drug-protein interaction databases and rare disease-protein databases, we predicted novel drug-protein binding interactions. Furthermore, we employed ProteinBERT, a state-of-the-art transformer-based protein language model pretrained on ~106 million sequences from UniRef90 using a masked language modeling (MLM) technique. Remarkably, this model uses a dual-scale embedding architecture—integrating residue-level embeddings and sequence-level embeddings—with global-attention layers of linear complexity to appropriately capture both local and global contextual information across entire protein sequences, enabling efficient and scalable modeling of protein function and interactions.. This enabled our prototype machine learning model to process extremely long protein sequences—which are often infeasible for standard models—and extract biologically meaningful residue-level representations. We applied this framework to large-scale datasets using the rare disease cystic fibrosis as a test case to explore functional protein-ligand interactions. Additionally, we externally validated the obtained potential drug candidate results by comparing the structure of identified ligands with existing experimentally validated therapeutic alternatives. The abundance of well-curated ClinVar data on pathogenic variants of Cystic Fibrosis and its clear genotype-phenotype correlation makes it advantageous for training this model. Ultimately, RARExDrug promises to accelerate drug discovery for rare diseases, reducing both timeline and cost.
+
+## Team 5: Phasing structural variants using phased aligned data
+
+Understanding genetic variation is fundamental to deciphering genome function and disease. Haplotypes, sets of co-inherited DNA variations, are crucial for elucidating gene function, disease susceptibility, and population genetics. Concurrently, Structural Variants (SVs)—large-scale genomic alterations—significantly contribute to genetic diversity and are implicated in numerous human diseases. However, determining the haplotype phase of SVs, assigning each to its parental chromosome, is substantially more challenging than for smaller variants like SNPs, largely due to SV size and complexity. While SNP phasing methods are mature and modern sequencing can provide phased alignments, a critical gap exists in accurately transferring this phase information to co-located SVs. Phased SVs are vital for identifying compound heterozygosity and understanding allele-specific effects, thereby improving genomic studies. This project aims to bridge this gap by developing a novel method that integrates information from pre-phased SNPs and phased read alignments to accurately estimate SV haplotypes, offering a valuable contribution to the genomics toolkit.
+
+## Team 6: Leveraging LLMs for alternative splicing studies
+
+Alternative splicing (AS) is a vital post-transcriptional mechanism in eukaryotic gene regulation that enables a single gene to produce multiple mRNA transcripts and protein isoforms. This biological process expands the functional capacity of the genome, playing a critical role in tissue-specific gene expression, cellular identity, and developmental processes. However, dysregulation of AS has been strongly linked to cancer progression, contributing to key hallmarks such as uncontrolled proliferation, resistance to apoptosis, angiogenesis, and metastasis. Given its complexity and relevance, accurate detection and prediction of splicing events—especially tumor-specific ones—are crucial for understanding disease mechanisms and identifying potential biomarkers or therapeutic targets. This project aims to leverage LLMs in the process of splicing, thereby increasing the efficiency and accuracy (as seen in Fig. Team 6-1).
+
+## Team 7: Harmonization and imputation of epigenomics data – exposome
+
+The exposome, a term coined to describe the totality of environmental exposures from conception onwards, is increasingly recognized for its role in shaping health outcomes, including the development of chronic diseases and cancers (Vineis and Barouki 2022). Among the various factors that contribute to the exposome, epigenetic modifications such as DNA methylation and microRNA (miRNA) expression have been shown to be particularly influential in regulating gene expression without altering the DNA sequence itself (Danieli et al. 2024). The interaction between the exposome and these epigenetic markers is a burgeoning area of research, with previous studies suggesting that environmental factors can induce epigenetic changes that may lead to disease susceptibility (Ogunjobi et al. 2024). In the face of growing evidence linking environmental exposures to chronic diseases and cancers, our project aims to leverage advanced machine learning techniques, specifically bidirectional recurrent neural networks (BiRNNs), to explore the intricate relationship between the exposome and epigenomics. By integrating diverse datasets from different, we seek to uncover how environmental variables influence epigenetic markers, potentially offering novel insights into disease development and progression.
+
+## Team 8: Discovering cell cycle phase-specific chromatin conformation changes based on single cell Hi-C and multi-omics data
+
+Chromatin undergoes dynamic structural reorganisation which may drive chromatin organization throughout the cell cycle. Our project aims to comprehensively integrate multi-omics datasets—including gene expression, chromatin accessibility, and contact maps—to advance the understanding of cell cycle phase-specific chromatin dynamics. Coupled with 3D genome modeling, our approach seeks to uncover novel and distinct chromatin conformational changes along the trajectory of cell cycle progression and other genomic processes such as cellular maturation. We employ state-of-the-art 3D modeling techniques that incorporate temporal information from the cell cycle, alongside cutting-edge methods for multi-omics integration, clustering, and pattern recognition. This combined strategy is designed to reveal common principles and patterns underlying chromatin structural organization within the cell nucleus.
+
+## Team 9: Advanced Modeling of Toxicological Profiles
+
+Estrogen related receptors (ERRs) are one of the first orphan nuclear receptors identified (Aubert et al. 2013). ERRs are required for high-energy production in response to the environmental and physiological challenges. They play an important role in the control of cellular energy, including mitochondrial biogenesis, gluconeogenesis, and oxidative phosphorylation (Aubert et al. 2013; Audet-Walsh and Giguére 2015), with signaling implicated in metabolic disorders like type 2 diabetes (Audet-Walsh and Giguére 2015), with EER-alpha (subfamily of EERs) identified as an adverse marker for breast cancer progression (Huang 2016).
+Screening and identifying environmental compounds that perturb the EER signaling pathways could provide information for potential preventive measures in treating the mentioned metabolic diseases (Aubert et al. 2013). Predicting their activity continuously allows for a quantitative assessment of receptor activation or inhibition, reflecting real biological responses more accurately than binary (toxic/nontoxic) labels, additionally allowing for information on dose-response that is not present in binary toxicity prediction.
+
+## Team 10: Developing graph neural networks for gene regulation discovery
+
+The Gene regulatory networks (GRNs) play a pivotal role in revealing the extended regulatory relationship between genes and transcription factors, which forms the basis of describing complex biological processes and modes of gene regulation for the therapy of human diseases (Pratapa et al. 2020). With revolutions in the single-cell RNA sequencing (scRNA-Seq) and chromosome conformation capture technologies, we can perform the simultaneous analysis of gene expression and 3D chromatin (Cremer and Cremer 2019; Rao et al. 2014; Zheng et al. 2019). Graph neural networks (GNNs) provided natural architecture for modeling network-like data with the ability to integrate various additional features and choose between a range of architecture variants (Zhou et al. 2020), most notably, the Graph Attention Networks (GATs), (Veličković et al. 2017). multilayered genomic data types from cutting-edge omics technologies . The aim of this project is to provide an extensible framework for training GNN models on custom datasets, adding the ability to adjust and provide custom features by the user without the need to rewrite training code. We build on previous approaches (Paul et al. 2024) in particular by incorporating chromosome conformation capture data (Hi-C), to improve the GRN predictions from scRNA-Seq to bridge graph-based machine learning and 3D Genomics.
 
 # Methods
 
-## Virus Susceptibility
-
-The Jupyter notebooks used in this work are located in the scripts/ directory on the project GitHub page (https://github.com/collaborativebioinformatics/virussusceptibility).
-The CORD-19 dataset [@wang_cord-19_2020] contains metadata and embeddings that are generated from Covid-19-related articles. We retrieved the embeddings with references to the original articles from the dataset. The embeddings were generated with SPECTER (Scientific Paper Embeddings using Citation-informed TransformERs) [@cohan_specter_2020], which is a pre-trained language model that can be used to generate high-quality article representations. The training of the model and its implementation details can be found in the original article [@cohan_specter_2020]. We created a vector database with 'insert', 'query', and 'retrieve' methods (https://www.linkedin.com/pulse/vector-databases-demystified-part-2-building-your-own-adie-kaye/). Then, we inserted the CORD-19 embedding into the vector database.
-We downloaded SPECTER from GitHub (https://github.com/allenai/specter) and used it to create an embedding for an example query (specifically, "What combinations of features predispose cohorts to virus susceptibility?"). Next, we compared the embedding of the example query with all of the embeddings in the dataset and ranked the comparisons according to cosine similarity. Thus, the highest-ranked paper retrieved should be the closest contextual match to the example query (i.e., the highest ranked paper should have the highest measure of cosine similarity).
-Remark: Cosine similarity turned out to be unsuitable for high-dimensional vector comparison. For this reason we reduced the dimensionality of vectors with random projection (http://people.ee.duke.edu/{\textasciitilde}lcarin/p93.pdf; https://towardsdatascience.com/random-projection-in-python-705883a19e48); specifically, Gaussian random projection (https://scikit-learn.org/stable/modules/generate/sklearn.random\_projection.{GaussianRandomProjection}.html). Then, we used cosine similarity to search for articles that showed  the highest relevance with respect to the query.
-As a proof of principle, we created a dataset of ten articles and embedded the articles SPECTER [@cohan_specter_2020]. The embeddings were subsequently inserted into a vector database. Lastly, we tested the retrieval of the most relevant articles. The corresponding workflow is provided on the project GitHub page (https://github.com/collaborativebioinformatics/virussusceptibility/scripts/query_custom_dataset.ipynb).
-
-## Graph Based Tuning
-Firstly, 38,617 drug-relationship-target triples were downloaded from the Therapeutic Target Database [@zhou_ttd_2023]. A knowledge graph was generated from 20 sample triples and is shown in **Figure 5**. Then, we developed an algorithm to preprocess such triplets into a prompt-response format for LLAMA2 (see “inputdata.txt”). For instance, a sample prompt would be “[INST] Tell me more about the drug with ID D07OAC. [/INST]” and its corresponding response would be “Drug D07OAC is an inhibitor to target protein S5A2_HUMAN.”
-
-![Figure 5. Knowledge graph generated from 20 sample triples.](./figures/kg_20_triplets.png)\
-**Figure 5.** Knowledge graph generated from 20 sample triples.
 
 
 
-Traditional fine-tuning approaches generally require retraining the last layers of the LLM, which is computationally-expensive. To overcome this, we leveraged QLora [@dettmers_qlora_2023], an efficient parameter tuning method that uses Low Rank Adaptation and Double Quantization to reduce training and inference costs. The Llama 2-7b [@touvron_llama_2023] model was fine-tuned on the preprocessed data for three epochs. Training was done on a NVIDIA Tesla A100 and training time was approximately three hours. Our fine-tuned model LLAMA2Glendalorian has been deployed on HuggingFace (https://huggingface.co/tminh/llama-2-7b-glendalorian). Finally, our fine-tuned model was benchmarked against ChatGPT (https://chat.openai.com) and the original Llama 2 model using the prompt “What can the drug with ID D0Y6UB do?”. The results are shown in the results section.
 
-## VCFs to Knowledge Graphs
 
-We first acquired data from the TCGA COAD-CPTAC dataset, mentioned above and previously described in Vasaikar et. al., 2019 [@vasaikar_proteogenomic_2019]. This dataset consists of a MAF file (pre-converted from a VCF file) that provides data about subjects, the genetic variants they carry, and various annotations for those variants including: what genes they mapped to, the functional impact of those variants, and ClinVar annotations for variants that had a known clinical impact. 
-
-To ensure data harmonization, especially when dealing with the potential integration of data across cohorts (although not implemented in this instance, but is feasible within this framework), we obtained MONDO concepts for various diseases from the MONDO database. Similarly,  we acquired HUGO concepts for each gene. This approach enabled us to establish a unified representation for genes and diseases across various cohorts, addressing potential heterogeneity issues that are most likely to emerge across nodes in the graph between cohorts and where harmonization is critical.
-
-To reduce the number of variants included within the dataset as a proof-of-concept, we filtered the genes contained within the graph to only include those with ClinVar-annotated variants across the entire cohort. However, the same framework can be applied without this filtering step to substantially enrich the graph and enable possible link prediction and inference tasks (of which genes may be associated with disease, for example). The code to implement this is included in the repository (https://github.com/collaborativebioinformatics/vcfs2kgs) as a Python notebook `tcga_rdf.ipynb` that can be run directly so long as the data is downloaded and provided, and a BioPortal API key is acquired (which can be done for free).
-
-## Knowledge Graph Based Validation
-
-We accomplished evaluation of the LLMs by constructing an induced subset of an existing knowledge base known as DisGeNet, which is structured in a relational form as a knowledge graph. The induced subset consisted of three single nucleotide polymorphisms (SNP, aka variants) and the diseases associated with those variants, and it comprised the set of SNPs for which we tested this approach.
-
-For each SNP, we acquired a body of literature from PubMed by using the SNP name as a keyword for a PubMed search. The abstracts from the papers obtained were provided for each SNP to the model and the model was prompted to construct subject-predicate-object triplets from these abstracts. We evaluated this approach on multiple open-source or publicly available LLMs, including Vicuna-7b, Vicuna-13b, llama2-7b, codellama2-7b, and GPT-4. We used three overarching prompts for each of these models:
-
-Prompt 1: “User: Create subject predicate subject logic triplets using some motor vehicles and output it as a subject predicate subject logic triplet. An example subject predicate subject triplet could be Biliary Atresia - results in - biliary obstruction. Create 10 of these triplets.”
-
-Prompt 2: “User: Create subject predicate subject logic triplets using some genes and their disease associations and output it as a subject predicate subject logic triplet. An example subject predicate subject triplet could be Biliary Atresia - results in - biliary obstruction. Create 10 of these triplets.”
-
-Prompt 3: “Create subject predicate subject logic triplets using singlue nucleotide polymorphism rs rs113993960 and their disease associations and output it as a subject predicate subject logic triplet. An example subject predicate subject triplet could be Biliary Atresia - results in - biliary obstruction. Create10 of these triplets.”
-
-We then compared the results of these models to the DisGeNet associations. The code for all of these can be found in the repository (https://github.com/collaborativebioinformatics/kgbasedvalidation/) with documentation in the repository describing the required dependencies and installation instructions. 
 
 # Discussion and/or Conclusion
 

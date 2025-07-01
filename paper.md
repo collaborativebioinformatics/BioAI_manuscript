@@ -200,8 +200,7 @@ affiliations:
     index: 30
   - name: Institute of Zoology and Biomedical Research, Faculty of Biology, Jagiellonian University, Kraków, Poland
     index: 31
-  - name: Bioinformatics Laboratory, Research and Development cell & Parul Institute of Applied Sciences 
-Parul University.India
+  - name: Bioinformatics Laboratory, Research and Development cell & Parul Institute of Applied Sciences, Parul University, India
     index: 32
   - name: International Centre for Genetic Engineering and Biotechnology (ICGEB), New Delhi, India
     index: 33

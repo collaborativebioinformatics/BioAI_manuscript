@@ -5,12 +5,7 @@ tags:
   - deep learning
   - graph neural networks
   - large language models
-  - biological networks
-  - splicing, microbiome
-  - drug discovery
-  - chromatin organisation
   - multi-omics
-  - single-cell
 
 authors:
   - name: Rahaf M. Ahmad*

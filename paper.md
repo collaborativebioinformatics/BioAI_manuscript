@@ -8,28 +8,28 @@ tags:
   - multi-omics
 
 authors:
-  - name: Rahaf M. Ahmad*
+  - name: Rahaf M. Ahmad
     orcid: 0000-0002-7531-5264
     affiliation: 10
-  - name: Michał Denkiewicz*
+  - name: Michał Denkiewicz
     orcid: 0000-0001-8890-9988
     affiliation: 14
-  - name: Rishika Gupta*
+  - name: Rishika Gupta
     orcid: 0000-0001-6246-3906
     affiliation: 27
-  - name: Sachin Gadakh*
+  - name: Sachin Gadakh
     orcid: 0000-0002-7524-7898
     affiliation: 2
-  - name: Jędrzej Kubica*
+  - name: Jędrzej Kubica
     orcid: 0000-0001-7037-3900
     affiliation: 6
-  - name: Alishba Nadeem*
+  - name: Alishba Nadeem
     orcid: 0000-0003-4194-5337
     affiliation: 18
-  - name: Alicja M. Olszewska*
+  - name: Alicja M. Olszewska
     orcid: 0000-0002-3995-8166
     affiliation: 3
-  - name: Federico Rossi*
+  - name: Federico Rossi
     orcid: 0000-0002-3058-9448
     affiliation: 8
   - name: John Adedeji
@@ -227,17 +227,13 @@ group: BioAIUWarsaw
 git_url: https://github.com/SFGLab
 ---
 
-#### \* These authors contributed equally
-
 # Abstract
 
 The BioAI Hackathon at the Centre of New Technologies at the University of Warsaw convened 43 international researchers to collaboratively explore artificial intelligence (AI) approaches for solving complex challenges in computational biology. Nine interdisciplinary and multi-institutional teams addressed the following problems: disease-gene prioritization, microbiome analysis, drug-protein interactions, alternative splicing prediction, chromatin architecture study and toxicological profiling. Using cutting-edge tools such as graph neural networks (GNNs), large language models (LLMs), and multi-omics integration frameworks, participants developed scalable and reproducible analytical pipelines. The results include a disease gene prioritization framework using GNNs, a microbiome dynamics analysis for poultry health prediction and the construction of chromatin structure-aware regulatory networks leveraging Hi-C and scRNA-seq data. All projects follow the open science principles and display translational potential. This hackathon underscores the transformative role of AI in biomedicine and the value of collaborative, time-bounded innovation for accelerating discovery in life sciences.
 
 # Introduction
 
-Recent advances in genomics, transcriptomics, epigenetics and systems biology have enabled an unprecedented capacity to collect and analyze biological data. These high-throughput technologies generate vast datasets that hold the key to understanding human health and disease. However, the volume, complexity, and heterogeneity of biomedical data pose significant challenges. To address them, artificial intelligence (AI), particularly machine learning (ML) and deep learning (DL) algorithms, have become increasingly useful in extracting meaningful biological insights.
-
-During the BioAI Hackathon at the University of Warsaw, participants explored novel AI-based solutions, including graph neural networks and large language models, for the following challenges: disease-gene prioritization, microbiome dynamics analysis, drug discovery for rare disease, study of splicing regulation, epigenomics data harmonization, investigation of chromatin reorganization and toxicological profiling. All projects are publicly available on GitHub: https://github.com/SFGLab 
+Recent advances in genomics, transcriptomics, epigenetics and systems biology have enabled an unprecedented capacity to collect and analyze biological data. These high-throughput technologies generate vast datasets that hold the key to understanding human health and disease. However, the volume, complexity, and heterogeneity of biomedical data pose significant challenges. To address them, artificial intelligence (AI), particularly machine learning (ML) and deep learning (DL) algorithms, have become increasingly useful in extracting meaningful biological insights. During the BioAI Hackathon at the University of Warsaw, participants explored novel AI-based solutions, including graph neural networks and large language models, for the following challenges: disease-gene prioritization, microbiome dynamics analysis, drug discovery for rare disease, study of splicing regulation, epigenomics data harmonization, investigation of chromatin reorganization and toxicological profiling. All projects are publicly available on GitHub: https://github.com/SFGLab 
 
 ## Code Availability
 

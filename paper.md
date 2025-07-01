@@ -508,6 +508,57 @@ Moreover, since we construct the GNN model by providing a base architecture, and
 ![Figure Team 5-4. Visualization interface for phased SVs.](./figures/Fig5-4.png)\
 **Figure Team 5-4.** Visualization interface for phased SVs.
 
+![Figure Team 6-1. Introduction – Generic background to alternative splicing.](./figures/Fig6-1.png)\
+**Figure Team 6-1.** Introduction – Generic background to alternative splicing.
+
+![Figure Team 6-2. Methods – Overview of the methodology.](./figures/Fig6-2.png)\
+**Figure Team 6-2.** Methods – Overview of the methodology.
+
+![Figure Team 6-3. Methods – Overview of data processing.](./figures/Fig6-3.png)\
+**Figure Team 6-3.** Methods – Overview of data processing.
+
+![Figure Team 6-4. Results – Alternative splicing model.](./figures/Fig6-4.png)\
+**Figure Team 6-4.** Results – Alternative splicing model.
+
+![Figure Team 6-5. Results – Sequence length variation.](./figures/Fig6-5.png)\
+**Figure Team 6-5.** Results – Sequence length variation.
+
+![Figure Team 7-1. Overview of Team 7’s EpiXposome framework for integrating epigenomic and exposomic data.](./figures/Fig7-1.png)\
+**Figure Team 7-1.** Overview of Team 7’s EpiXposome framework for integrating epigenomic and exposomic data.
+
+![Figure Team 7-2. Epigenomic and exposome data preprocessing.](./figures/Fig7-2.png)\
+**Figure Team 7-2.** Epigenomic and exposome data preprocessing.
+
+![Figure Team 7-3. Machine learning modeling and interpretation phase.](./figures/Fig7-3.png)\
+**Figure Team 7-3.** Machine learning modeling and interpretation phase.
+
+![Figure Team 7-4. Visualization and biological insight reporting.](./figures/Fig7-4.png)\
+**Figure Team 7-4.** Visualization and biological insight reporting.
+
+![Figure Team 8-1. Overview of Team 8’s phase-specific chromatin state change workflow.](./figures/Fig8-1.png)\
+**Figure Team 8-1.** Overview of Team 8’s phase-specific chromatin state change workflow.
+
+![Figure Team 8-2. Gene examples illustrating expression differences across phases.](./figures/Fig8-2.png)\
+**Figure Team 8-2.** Gene examples illustrating expression differences across phases.
+
+![Figure Team 8-3A. Chromatin accessibility vs expression in S phase.](./figures/Fig8-3A.png)\
+**Figure Team 8-3A.** Chromatin accessibility vs expression in S phase.
+
+![Figure Team 8-3B. Chromatin accessibility vs expression in G1 phase.](./figures/Fig8-3B.png)\
+**Figure Team 8-3B.** Chromatin accessibility vs expression in G1 phase.
+
+![Figure Team 8-3C. Chromatin accessibility vs expression in G2 phase.](./figures/Fig8-3C.png)\
+**Figure Team 8-3C.** Chromatin accessibility vs expression in G2 phase.
+
+![Figure Team 9-1. Overview of Team 9’s AI-powered toxicological profiling pipeline.](./figures/Fig9-1.png)\
+**Figure Team 9-1.** Overview of Team 9’s AI-powered toxicological profiling pipeline.
+
+![Figure Team 10-1. Workflow of Team 10’s 3D gene regulatory network inference using GNN.](./figures/Fig10-1.png)\
+**Figure Team 10-1.** Workflow of Team 10’s 3D gene regulatory network inference using GNN.
+
+![Figure Team 10-2. Comparative visualization of data inputs across multiple configurations.](./figures/Fig10-2.png)\
+**Figure Team 10-2.** Comparative visualization of data inputs across multiple configurations.
+
 
 # Conclusion and Future Directions
 

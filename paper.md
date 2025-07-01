@@ -560,66 +560,102 @@ Moreover, since we construct the GNN model by providing a base architecture, and
 **Figure Team 10-2.** Comparative visualization of data inputs across multiple configurations.
 
 
-# Conclusion and Future Directions
 
-The advent of large language models (LLMs) has provided a unique opportunity in the biomedical domain. LLMs have shown the capability in outputting code or file formats given natural language prompts, synthesising data, and extracting relevant information from corpus. Below we provide future Directions for the Teams Involved in this Hackathon.
+**Table Team 1-1.** Selected Ataxia-related HPO terms and clinical concepts.
 
-## Virus Susceptibility
+|  HPO Code  | Term Description                                         |
+| :--------: | :------------------------------------------------------- |
+| HP:0001251 | Ataxia                                                   |
+| HP:0002066 | Gait ataxia                                              |
+| HP:0002078 | Truncal ataxia                                           |
+| HP:0008568 | Vestibular areflexia                                     |
+| HP:0002497 | Spastic ataxia                                           |
+| HP:0010871 | Sensory ataxia                                           |
+| HP:0007221 | Progressive truncal ataxia                               |
+| HP:0007240 | Progressive gait ataxia                                  |
+| HP:0002073 | Progressive cerebellar ataxia                            |
+| HP:0031868 | Optic ataxia                                             |
+| HP:0002470 | Nonprogressive cerebellar ataxia                         |
+| HP:0002070 | Limb ataxia                                              |
+| HP:0002131 | Episodic ataxia                                          |
+| HP:0009878 | Cerebellar ataxia associated with quadrupedal gait       |
+|  C0007758  | Cerebellar ataxia (UMLS Concept Unique Identifier - CUI) |
 
--	Create a vector database of 1M CORD-19 articles
--	Develop a more efficient method to generate queries for the vector database
--	Use the vector database to ask complex scientific questions:
--	"What combinations of features predispose cohorts to viral infections?"
--	"Which combinations differentially predispose individuals to chronic disease post infection?”
 
-## Graph Based Tuning
+**Table Team 1-2.** Comparison of top gene rankings across three methods: geneDRAGNN, retrained geneDRAGNN on ataxia, and MultiXrank.
 
--	Fine-tune LLMs onto additional biomedical KGs:
--	DrugBank/ROBOKOP 
--	Protein-protein interactions
--	Drug-drug interactions
+| geneDRAGNN | retrained geneDRAGNN | MultiXrank |
+| :--------- | :------------------- | :--------- |
+| MPHOSPH10  | XRCC1                | HDAC3      |
+| IMP3       | APBB1                | MLH1       |
+| IMP4       | COQ8A                | IL18       |
+| RNF146     | HTT                  | ADAM23     |
+| F11R       | SPG7                 | ADAM22     |
+| PIDD1      | PNKP                 | TLR6       |
+| TNKS       | ZFP36                | CD36       |
+| F2         | ATXN3                | RBL2       |
+| AXIN2      | KCNJ10               | RB1        |
+| AXIN1      | VLDLR                | PTPRA      |
+| KCNIP3     | GOSR2                | MAPK12     |
+| TNKS2      | NF1                  | NFKB1      |
+| CRADD      | CASK                 | YOD1       |
+| PELP1      | HEXB                 | NPNT       |
+| KCND1      | MT-ATP6              | UNC5B      |
+| KCNIP4     | COX20                | EYA1       |
+| KCNIP1     | POLG                 | GRM5       |
+| MAP1LC3B   | TTBK2                | TLE5       |
+| NRF1       | GRM1                 | EIF4G1     |
+| CASP2      | CP                   | ASAP1      |
 
-## VCFs to Knowledge Graphs
 
--	Construct sample-sample edges from a genetic relatedness matrix, automatically identifying duplicates and related individuals across cohorts
--	Create disease-disease edges based on co-occurrence and different levels of granularity
--	Include gene-disease edges from DisGeNet
--	Include additional node attributes, e.g.: original cohort, sex, age on the sample level; or gene type (protein-coding, noncoding, pseudogene) on the gene level
+**Table Team 5-1.**  The distribution of these phased SVs by haplotype assignment. 
 
-## Knowledge Graph Based Validation
+|  HP1  |  HP2  | HP1\_HP2 | Unphased |
+| :---: | :---: | :------: | :------: |
+| 14439 | 13587 |   2583   |   3914   |
 
--	Compress prompts by summarizing abstracts further to reach context windows
--	Create an end-to-end pipeline using DisGeNET
--	Implement dynamic parameter tuning and queryable database formatting
--	Implement data structures for comparing SPO objects: 
--	Q/A implement comparison of data structures 
--	Implement key word predicates to limit the scope of keywords
 
-If you or your colleagues are interested in collaborating on these or similar projects in a hackathon or professional setting, please contact ben.busby@gmail.com. If you have technical questions or issues, please put an issue into one of the github repositories listed below.  
+**Table Team 10-1.** The resulting scores of the model. 
 
-# Data and software availability
+| Model |   AUC |  AUPR | F1 score | Jaccard score | Top-k score |
+| :---- | ----: | ----: | -------: | ------------: | ----------: |
+| Base  | 0.729 | 0.801 |    0.481 |         0.317 |       0.464 |
+| Aug   | 0.895 | 0.845 |    0.480 |         0.316 |       0.462 |
+| Aug3D | 0.985 | 0.851 |    0.485 |         0.320 |       0.473 |
 
-All code is provided in the following GitHub repositories, which may include additional links to data repositories and Jupyter Notebooks.
 
--	https://github.com/collaborativebioinformatics/virustrajectory
--	https://github.com/collaborativebioinformatics/graphbasedtuning
--	https://github.com/collaborativebioinformatics/vcfs2kgs
--	https://github.com/collaborativebioinformatics/kgbasedvalidation
+# Discussion and/or Conclusion
+
+The BioAI Hackathon demonstrated the immense potential of AI methods, particularly graph neural networks, transformer models, and advanced regression architectures for extracting biologically meaningful insights from complex multi-modal datasets. Each team contributed novel workflows and proof-of-concept models that addressed specific biological questions, including gene regulation, splicing, environmental exposures, disease mutation prioritization, and pharmacogenomics. While many of the models require further refinement and validation, especially with larger datasets and external benchmarking, the foundational tools developed here highlight the value of collaborative, time-constrained development in scientific innovation. Teams like Team 1 and Team 10 showed that integrating network topology with domain-specific features can significantly enhance prediction accuracy for gene regulatory or disease-association problems. Similarly, Team 2’s reproducible microbiome pipeline and Team 4’s drug-protein interaction predictor demonstrate translational relevance for agriculture and rare disease drug discovery, respectively. A common thread across projects was the emphasis on reproducibility, extensibility, and transparency, evidenced by the use of well-organised GitHub repositories, containerized workflows, and structured documentation. The challenges faced, such as limited compute resources, software reproducibility issues, and data integration hurdles, offer insight into the current limitations of bioinformatics prototyping under constrained timelines. Moving forward, we encourage sustained collaboration among participants, refinement of the developed tools, and potential publication or deployment of high-impact pipelines. The hackathon served not only as a testing ground for advanced AI in biology but also as a catalyst for building a vibrant, cross-disciplinary community committed to open science and biomedical innovation.
+
+
+# Future work
+
+Each project developed during this hackathon has laid a strong foundation for continued advancement in rare disease research using artificial intelligence. Future hackathons can build upon these efforts by focusing on: refining model interpretability and transparency; integrating multi-omics and clinically validated data; improving usability through containerization and low-code interfaces; and promoting cross-team modularity, reproducibility, and open dissemination. The sections below outline each team’s forward-looking vision, emphasizing practical next steps and highlighting potential synergies across projects that can guide the next wave of collaborative innovation.
+
+Team 1 focused on gene prioritization with a specific emphasis on ataxia, leveraging graph-based machine learning models such as XGDAG and geneDRAGNN. While they successfully retrained one of the models from the geneDRAGNN tool on an ataxia-specific dataset, their future work aims to further fine-tune the models using disease-specific input data. They also plan to benchmark these models against traditional network propagation methods using leave-one-out cross-validation, comparing the top-ranked gene predictions. For biological interpretability and clinical relevance, they propose employing explainable AI techniques. A key focus is ensuring reproducibility and usability by containerizing the workflow.
+
+Team 4 developed a machine learning framework for drug repurposing in cystic fibrosis, with future plans to extend their work to include graph neural networks for better topological representation of molecular structures. Moreover, to improve model performance, Team4 plans to expand the dataset used for the training of the deep learning model and to increase the epochs included in the training process. They also plan to tailor their models to account for the most frequent protein mutations observed in cystic fibrosis, further anchoring their predictions in real clinical data. Once training is complete, the team envisions deploying an interactive web platform to support non-technical researchers and clinicians in identifying new therapeutic candidates. This commitment to clinical relevance and user-centered design parallels the usability goals highlighted by Team 1 and the data integration strategies proposed by Team 8, opening opportunities for shared infrastructure and downstream deployment across rare disease applications. 
+
+Team 5 worked on assigning haplotypes to structural variants using a deterministic method based on haplotype-tagged read support. Recognizing that this approach can introduce bias, future work will involve refining the method to incorporate percentage-based support metrics, thereby enabling probabilistic haplotype assignment with statistical backing. This direction ensures greater biological relevance and robustness in structural variant interpretation, and complements Team 6’s efforts to bring greater interpretability to sequence-based models by rooting predictions in observable patterns and statistical evidence.
+
+Team 6 focused on distinguishing neojunctions from normal splicing events in cancer using deep learning. Their future directions aim to improve model interpretability by analyzing attention weights to identify motifs or regulatory features near splice sites. They also plan to expand model input windows beyond current size limits to capture more distal regulatory context and to develop holistic event-level models that directly analyze the interplay of exons and introns. These efforts share conceptual ground with Team 5’s commitment to biologically informed modeling, and with Team 1’s interest in expanding graph-level interpretability in disease-specific contexts.
+
+Team 7 proposed packaging their work into a standardized and reusable Python module, enabling wider dissemination and reproducibility. They aim to publish both their findings and the tool itself, providing the broader research community with a usable and well-documented resource. While their scope is focused, the foundational infrastructure they are building can directly support teams such as Team 1 and Team 8, both of which rely on complex, multi-step pipelines that would benefit from standardized packaging and distribution.
+
+Team 8 developed a functional multi-omics integration pipeline incorporating scRNA-seq, scATAC-seq, and scChIA-PET data. They acknowledge the need for deeper validation of their methods and propose to refine feature extraction using tools like CIRCLET and scHiCyclePred for contact data and Seurat or Scanpy for single-cell expression analysis. Future work will explore alternative chromatin representations, including angular relationships, bead positioning, and temporal dynamics derived from functional data analysis. Clustering strategies and latent structure discovery using autoencoders are also of interest. Finally, the team plans to containerize the pipeline as a Python package, which mirrors Team 1’s and Team 4’s emphasis on reproducibility and usability, pointing toward a future in which multi-omic data analysis can be deployed modularly across different disease models.
+
+Team 9 is finalizing their contributions, and their upcoming work is anticipated to complement the directions outlined above—particularly in areas such as network-based modeling, translational utility, or novel data integration strategies. Their future directions will be documented once available, with the expectation of meaningful contributions to the collaborative framework established by other teams.
+
+Team 10 plans to enhance gene network modeling by introducing greater flexibility in architectural configurations and expanding the diversity of networks utilized. They aim to incorporate enhancer data into their models and develop automated tools for 3D network generation. Future work also includes refining negative set construction, performing in-depth evaluations of feature importance, and improving overall usability and configurability of their pipeline. These efforts align with Team 1’s work on GNN-based prioritization and Team 8’s integration of multi-layer network data, contributing toward a unified, graph-based infrastructure for gene–disease exploration.
+
+Together, these future directions define a shared trajectory: toward interpretable, modular, clinically aligned AI tools for rare disease research. By focusing on data integration, biological realism, usability, and reproducibility, future hackathons can evolve into accelerators for translational research. Building interoperable pipelines, benchmarking across tools, and fostering cross-team collaboration will be essential to realizing this collective vision. 
+
 
 # Acknowledgements
 
-## Carnegie Mellon Libraries
+This work was done at the BioAI Hackathon at the Centre of New Technologies, University of Warsaw.  
 
-For providing space – in both Pittsburgh, PA and Palo Alto, CA – as well as refreshments and other logistical support. The authors would especially like to thank Tom Hughes, Melanie Gainey, and Leigh Mason.
-
-## DNAnexus
-
-Thanks to DNAnexus for providing computing resources for the Hackathon, as well as the time of BB and CL.  
-
-## Grant funding
-
-Van Q. Truong is supported by the Microsoft Research PhD Fellowship and ACM SIGHPC Computational and Data Science Fellowship. Rachit Kumar is supported by the Training Program in Computational Genomics grant from the National Human Genome Research Institute to the University of Pennsylvania under award number T32HG000046.
+BB is a full-time employee of NVIDIA. Halina Krzystek is a full-time employee of IQVIA Laboratories, USA. JK‬ ‭is‬ ‭supported‬ ‭by‬ ‭the‬ ‭France‬ ‭2030‬ ‭state‬ ‭funding‬ ‭managed‬‭ by‬ ‭the‬ ‭National‬ Research‬‭ Agency with ‬‭the ‬‭reference ‬‭"ANR-22-PEPRSN-0013". Aleksandra Sobieska acknowledges the support of Helmholtz Center Munich, where she was affiliated as a visiting researcher at the time of the hackathon. Rishika Gupta was affiliated as a full-time researcher at CiTIUS (Centro Singular de Investigación en Tecnoloxías Intelixentes), Spain during the days of the hackathon. 
 
 # References
-
-

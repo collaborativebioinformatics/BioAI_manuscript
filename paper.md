@@ -1,5 +1,5 @@
 ---
-title: 'Artificial Intelligence Approaches for Computational Biology: Highlights from the first BioAI Hackathon at University of Warsaw'
+title: 'AI for Computational Biology: Highlights from the first BioAI Hackathon at University of Warsaw'
 tags:
   - biohackathon
   - deep learning

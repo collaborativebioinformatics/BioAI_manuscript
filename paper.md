@@ -226,6 +226,9 @@ bibliography: paper.bib
 authors_short: Ahmad R. M., Denkiewicz M., Gupta R., Gadakh S., Kubica J., Nadeem A., Olszewska A. M., Rossi F. \emph{et al.}
 biohackathon_name: "BioAI Hackathon at the University of Warsaw 2025"
 event: Other
+biohackathon_url: "https://cent.uw.edu.pl/bioai-hackathon-at-the-university-of-warsaw/"
+biohackathon_location: "Warsaw, Poland, 2025"
+group: Gene_Prioritization_GNN, AI_Microbiome_Poultry, AI_Drug_Targets_Rare_Diseases, SvPhaser, LLM_Splicing_Studies, EpiXposome, PhaseSpecific_Chromatin_Changes, Toxicological_Profiles, GNN4GRN-3D
 git_url: https://github.com/SFGLab
 ---
 

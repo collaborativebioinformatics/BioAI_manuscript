@@ -152,7 +152,7 @@ affiliations:
     index: 4
   - name: Institute of Medical Genetics and Applied Genomics, University of Tübingen, Tübingen, Germany
     index: 5
-  - name: Univ.‬ ‭Grenoble‬ ‭Alpes,‬ ‭CNRS,‬ ‭UMR‬ ‭5525,‬ ‭TIMC / BCM,‬ ‭38000‬ ‭Grenoble,‬ ‭France
+  - name: Univ.‬ ‭Grenoble‬ ‭Alpes,‬ ‭CNRS,‬ ‭UMR‬ ‭5525,‬ ‭TIMC / BCM,‬ ‭3800‬ ‭Grenoble,‬ ‭France
     index: 6
   - name: kocikowski.com
     index: 7

@@ -1,5 +1,5 @@
 ---
-title: 'AI for Computational Biology: Highlights from BioAI Hackathon at University of Warsaw'
+title: 'test'
 tags:
   - biohackathon
   - deep learning

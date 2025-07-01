@@ -556,7 +556,7 @@ Moreover, since we construct the GNN model by providing a base architecture, and
 ![Figure Team 10-1. Workflow of Team 10’s 3D gene regulatory network inference using GNN.](./figures/Fig10-1.png)\
 **Figure Team 10-1.** Workflow of Team 10’s 3D gene regulatory network inference using GNN.
 
-![Figure Team 10-2. Comparative visualization of data inputs across multiple configurations.](./figures/Fig10-2.png)\
+![Figure Team 10-2. Comparative visualization of data inputs across multiple configurations.](./figures/Fig10-2.jpg)\
 **Figure Team 10-2.** Comparative visualization of data inputs across multiple configurations.
 
 

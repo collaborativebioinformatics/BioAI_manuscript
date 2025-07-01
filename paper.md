@@ -224,7 +224,8 @@ affiliations:
 date: May 15, 2025
 bibliography: paper.bib
 authors_short: Ahmad R. M., Denkiewicz M., Gupta R., Gadakh S., Kubica J., Nadeem A., Olszewska A. M., Rossi F. \emph{et al.}
-event: BioAI Hackathon at the University of Warsaw 2025
+biohackathon_name: "BioAI Hackathon at the University of Warsaw 2025"
+event: Other
 git_url: https://github.com/SFGLab
 ---
 

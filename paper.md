@@ -127,7 +127,7 @@ authors:
   - name: Asha Ajithakumari Sobhanakumar
     orcid: 0000-0000-0000-0000
     affiliation: 11 
-  - name :Aleksandra Sobieska
+  - name: Aleksandra Sobieska
     orcid: -
     affiliation: 39, 40, 41
   - name: Marek Sokołowski

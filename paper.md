@@ -1,15 +1,232 @@
 ---
-title: ''
+title: 'Artificial Intelligence Approaches for Computational Biology: Highlights from the first BioAI Hackathon at University of Warsaw'
 tags:
-  - BioHackathon
+  - biohackathon
+  - deep learning
+  - graph neural networks
+  - large language models
+  - biological networks
+  - splicing, microbiome
+  - drug discovery
+  - chromatin organisation
+  - multi-omics
+  - single-cell
+
 authors:
+  - name: Rahaf M. Ahmad*
+    orcid: 0000-0002-7531-5264
+    affiliation: 10
+  - name: Michał Denkiewicz*
+    orcid: 0000-0001-8890-9988
+    affiliation: 14
+  - name: Rishika Gupta*
+    orcid: 0000-0001-6246-3906
+    affiliation: 27
+  - name: Sachin Gadakh*
+    orcid: 0000-0002-7524-7898
+    affiliation: 2
   - name: Jędrzej Kubica*
     orcid: 0000-0001-7037-3900
+    affiliation: 6
+  - name: Alishba Nadeem*
+    orcid: 0000-0003-4194-5337
+    affiliation: 18
+  - name: Alicja M. Olszewska*
+    orcid: 0000-0002-3995-8166
+    affiliation: 3
+  - name: Federico Rossi*
+    orcid: 0000-0002-3058-9448
+    affiliation: 8
+  - name: John Adedeji
+    orcid: 00009-0004-1257-4551
+    affiliation: 19
+  - name: Abolhassan Bahari
+    orcid: 0009-0003-8417-2327
+    affiliation: 4
+  - name: Krzysztof H. Banecki
+    orcid: 0000-0001-9573-0804
+    affiliation: 1, 2
+  - name: Nilabja Bhattacharjee 
+    orchid: 0009-0007-7752-6990
+    affiliation: 22
+  - name: Joanna Borkowska
+    orcid: 0009-0003-5503-1314
+    affiliation: 2
+  - name: Jacob R. Bumgarner
+    orcid: 0000-0002-0387-9263
+    affiliation: 13
+  - name: Kirtan Dave
+    orcid: 0000-0003-3886-8895
+    affiliation: 32
+  - name: German Demidov
+    orcid: 0000-0001-9075-4276
+    affiliation: 5
+  - name: Konrad Józef Dębski
+    orcid: 0000-0001-5949-9211
+    affiliation: 23
+  - name: Ritwik Ganguly
+    orcid: 0009-0000-4626-3760
+    affiliation: 22
+  - name: Radosław Gersz
+    orcid:
+    affiliation: 37
+  - name: Paulina Kaczyńska
+    orcid: 0000-0002-8690-8436
+    affiliation: 16
+  - name: Pu Kao
+    orchid:
+    affiliation: 36
+  - name: Fahad Ali Khan
+    orcid: 
+    affiliation: 26
+  - name: Mikolaj Kocikowski
+    orcid: 0000-0001-7396-9005
+    affiliation: 7
+  - name: Maciej Kowalski 
+    orcid: 0009-0005-1155-197X
+    affiliation: 24
+  - name: Halina Krzystek
+    orcid: 0009-0004-8363-0039
+    affiliation: 35
+  - name: Sabrina Kwak
+    orcid: 0009-0007-9588-4513
+    affiliation: 17
+  - name: David Liu
+    orcid: 00000-0000-0000-0000
+    affiliation: 20
+  - name: Pranjul Mishra
+    orcid: 0009-0003-5503-1314
     affiliation: 1
+  - name: Diya Patidar
+    orcid: 0009-0007-0238-2363
+    affiliation: 34
+  - name: Sreeram Chandra Murthy Peela
+    orcid: 0000-0003-3379-6263
+    affiliation: 22
+  - name: Aung Myat Phyo
+    orcid: 0009-0009-2893-3631
+    affiliation : 29
+  - name: Weronika Plichta
+    orcid:
+    affiliation: 25
+  - name: Ammara Saleem
+    orcid: 0009-0004-3754-8907
+    affiliation: 9
+  - name: Palash Sethi
+    orcid: 0009-0003-5423-8313
+    affiliation: 15
+  - name: Mukul Sherekar
+    orcid: 0000-0002-3638-9420
+    affiliation : 28
+  - name: Jatin Shrinet
+    orcid: 0000-0002-4274-613X
+    affiliation: 33
+  - name: Anna Simonyan
+    orcid: 0000-0001-8760-2298
+    affiliation: 21 
+  - name: Asha Ajithakumari Sobhanakumar
+    orcid: 0000-0000-0000-0000
+    affiliation: 11 
+  - name :Aleksandra Sobieska
+    orcid: -
+    affiliation: 39, 40, 41
+  - name: Marek Sokołowski
+    orcid: 0009-0009-3958-3526
+    affiliation: 1, 24
+  - name: Gobikrishnan Subramaniam
+    orcid: 0009-0001-4118-7591
+    affiliation: 12
+  - name: Rafał Kazimierz Wóycicki
+    orcid: 0000-0001-7991-7150
+    affiliation: 30
+  - name: Dariusz Plewczynski
+    orcid: 0000-0002-3840-7610
+    affiliation: 1, 2
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+    affiliation: 38
     
 affiliations:
-  - name: Laboratory of Functional and Structural Genomics, Centre of New Technologies, University of Warsaw, Warsaw, Poland
+  - name: Laboratory of Bioinformatics and Computational Genomics, Faculty of Mathematics and Information Science, Warsaw University of Technology, Koszykowa 75, 00-662, Warsaw, Poland
     index: 1
+  - name: Laboratory of Functional and Structural Genomics, Centre of New Technologies, University of Warsaw, Stefana Banacha 2c, 02-097, Warsaw, Poland
+    index: 2
+  - name: Laboratory of Brain Imaging, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, Pasteur 3 Str, Warsaw, Poland
+    index: 3
+  - name: High Institute for Research and Education in Transfusion Medicine, Iranian Blood Transfusion Organization, Tehran, Iran
+    index: 4
+  - name: Institute of Medical Genetics and Applied Genomics, University of Tübingen, Tübingen, Germany
+    index: 5
+  - name: Univ.‬ ‭Grenoble‬ ‭Alpes,‬ ‭CNRS,‬ ‭UMR‬ ‭5525,‬ ‭TIMC / BCM,‬ ‭38000‬ ‭Grenoble,‬ ‭France
+    index: 6
+  - name: kocikowski.com
+    index: 7
+  - name: SOPHiA GENETICS, Rolle, Switzerland
+    index: 8
+  - name: Department of Biochemistry, Quaid-I-Azam University, Islamabad, Pakistan
+    index: 9
+  - name: Department of Genetics and Genomics, College of Medicine and Health Sciences, United Arab Emirates University
+    index: 10
+  - name: jacobbumgarner.com
+    index: 13
+  - name: Warsaw University of Technology, Warsaw, Poland 
+    index: 14
+  - name: Department of Biology, University of Florida, Florida, USA
+    index: 15
+  - name: Institute of Fundamental Technological Research, Polish Academy of Sciences, Warsaw, Poland
+    index: 16
+  - name: Linear Diagnostics Ltd. , Birmingham, UK
+    index: 17
+  - name: School of Medical Science, Zhengzhou University, China
+    index: 18
+  - name: College of Health Sciences, Osun State University, Nigeria
+    index: 19
+  - name: CareDx, Brisbane, California, USA
+    index: 20
+  - name: Laboratory of biotesting and biomarkers, A.V. Dumansky Institute of Colloid and Water Chemistry, NAS of Ukraine 
+    index: 21
+  - name: Department of Computational Biology, IIITD, New Delhi, India 
+    index: 22
+  - name: FORK SYSTEMS Konrad Dębski, Duchnice, Poland
+    index: 23
+  - name: Inter-faculty Individual Studies in Mathematics and Natural Sciences, University of Warsaw, Poland
+    index: 24
+  - name: Warsaw University of Technology, Poland
+    index: 25
+  - name: IISER - Kolkata, India
+    index: 26
+  - name: CiTIUS ~ Centro Singular de Investigación en Tecnoloxías Intelixentes, Spain
+    index: 27
+  - name: Johns Hopkins University
+    index: 28
+  - name: Family Genomics Research Group, Department of Biology, Maynooth University, Ireland
+    index:29
+  - name: Institute of Zoology and Biomedical Research, Faculty of Biology, Jagiellonian University, Kraków, Poland
+    index: 30
+  - name: Institute of Zoology and Biomedical Research, Faculty of Biology, Jagiellonian University, Kraków, Poland
+    index: 31
+  - name: Bioinformatics Laboratory, Research and Development cell & Parul Institute of Applied Sciences 
+Parul University.India
+    index: 32
+  - name: International Centre for Genetic Engineering and Biotechnology (ICGEB), New Delhi, India
+    index: 33
+  - name: Carnegie Mellon University , USA
+    index: 34
+  - name: IQVIA Laboratories, Durham, North Carolina, USA
+    index: 35
+  - name: Graduate Institute of Biomedical Electronics and Bioinformatics, National Taiwan University, Taiwan
+    index: 36
+  - name: University of Warsaw MISMaP College, Warsaw, Poland
+    index: 37
+  - name: NVIDIA, Santa Clara, CA USA
+    index: 38
+  - name: School of Informatics, University of Edinburgh, Edinburgh, UK
+    index: 39
+  - name: School of Physics and Astronomy, University of Edinburgh, Edinburgh, UK
+    index: 40
+  - name: Institute of Epigenetics and Stem Cells, Helmholtz Center Munich, Munich, Germany
+    index: 41
+
 
    
 date: 

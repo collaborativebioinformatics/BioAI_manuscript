@@ -653,6 +653,7 @@ Together, these future directions define a shared trajectory: toward interpretab
 
 This work was done at the BioAI Hackathon at the Centre of New Technologies, University of Warsaw.  
 
-BB is a full-time employee of NVIDIA. Halina Krzystek is a full-time employee of IQVIA Laboratories, USA. JK is supported by the France 2030 state funding managed by the National Research Agency with the reference "ANR-22-PEPRSN-0013". Aleksandra Sobieska acknowledges the support of Helmholtz Center Munich, where she was affiliated as a visiting researcher at the time of the hackathon. Rishika Gupta was affiliated as a full-time researcher at CiTIUS (Centro Singular de Investigación en Tecnoloxías Intelixentes), Spain during the days of the hackathon. 
+BB is a full-time employee of NVIDIA. Halina Krzystek is a full-time employee of IQVIA Laboratories, USA. JK is supported by the France 2030 state funding managed by the National Research Agency with the reference "ANR-22-PEPRSN-0013". Aleksandra Sobieska acknowledges the support of Helmholtz Center Munich, where she was affiliated as a visiting researcher at the time of the hackathon. Rishika Gupta was affiliated as a full-time researcher at CiTIUS (Centro Singular de Investigación en Tecnoloxías Intelixentes), Spain during the days of the hackathon. SFGLab team is supported by Warsaw University of Technology within the Excellence Initiative: Research University (IDUB) programme and co-supported by Polish National Science Centre (2020/37/B/NZ2/03757). The work was co-supported by National Institute of Health USA 4DNucleome grant 1U54DK107967-01 and “Nucleome Positioning System for Spatiotemporal Genome Organization and Regulation”.
+
 
 # References

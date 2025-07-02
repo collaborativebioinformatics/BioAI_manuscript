@@ -5,6 +5,10 @@ tags:
   - deep learning
   - graph neural networks
   - large language models
+  - biological networks
+  - drug discovery
+  - microbiome
+  - chromatin
   - multi-omics
 
 authors:
@@ -137,9 +141,9 @@ authors:
     affiliation: 38
     
 affiliations:
-  - name: Faculty of Mathematics and Information Science, Warsaw University of Technology, Warsaw, Poland
+  - name: Warsaw University of Technology, Faculty of Mathematics and Information Science, Warsaw, Poland
     index: 1
-  - name: Centre of New Technologies, University of Warsaw, Warsaw, Poland
+  - name: University of Warsaw, Centre of New Technologies, Warsaw, Poland
     index: 2
   - name: Laboratory of Brain Imaging, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, Pasteur 3 Str, Warsaw, Poland
     index: 3
@@ -147,7 +151,7 @@ affiliations:
     index: 4
   - name: Institute of Medical Genetics and Applied Genomics, University of Tübingen, Tübingen, Germany
     index: 5
-  - name: Univ. Grenoble Alpes, CNRS, UMR 5525, TIMC / BCM, 3800 Grenoble, France
+  - name: Univ. Grenoble Alpes, CNRS, UMR 5525, TIMC, 38000 Grenoble, France
     index: 6
   - name: kocikowski.com
     index: 7
@@ -199,7 +203,7 @@ affiliations:
     index: 32
   - name: International Centre for Genetic Engineering and Biotechnology (ICGEB), New Delhi, India
     index: 33
-  - name: Carnegie Mellon University , USA
+  - name: Carnegie Mellon University, USA
     index: 34
   - name: IQVIA Laboratories, Durham, North Carolina, USA
     index: 35
@@ -229,21 +233,17 @@ git_url: https://github.com/SFGLab
 
 #### * These authors contributed equally
 
-# Abstract
-
-The BioAI Hackathon at the Centre of New Technologies at the University of Warsaw convened 43 international researchers to collaboratively explore artificial intelligence (AI) approaches for solving complex challenges in computational biology. Nine interdisciplinary and multi-institutional teams addressed the following problems: disease-gene prioritization, microbiome analysis, drug-protein interactions, alternative splicing prediction, chromatin architecture study and toxicological profiling. Using cutting-edge tools such as graph neural networks (GNNs), large language models (LLMs), and multi-omics integration frameworks, participants developed scalable and reproducible analytical pipelines. The results include a disease gene prioritization framework using GNNs, a microbiome dynamics analysis for poultry health prediction and the construction of chromatin structure-aware regulatory networks leveraging Hi-C and scRNA-seq data. All projects follow the open science principles and display translational potential. This hackathon underscores the transformative role of AI in biomedicine and the value of collaborative, time-bounded innovation for accelerating discovery in life sciences.
-
 # Introduction
 
-Recent advances in genomics, transcriptomics, epigenetics and systems biology have enabled an unprecedented capacity to collect and analyze biological data. These high-throughput technologies generate vast datasets that hold the key to understanding human health and disease. However, the volume, complexity, and heterogeneity of biomedical data pose significant challenges. To address them, artificial intelligence (AI), particularly machine learning (ML) and deep learning (DL) algorithms, have become increasingly useful in extracting meaningful biological insights. During the BioAI Hackathon at the University of Warsaw, participants explored novel AI-based solutions, including graph neural networks and large language models, for the following challenges: disease-gene prioritization, microbiome dynamics analysis, drug discovery for rare disease, study of splicing regulation, epigenomics data harmonization, investigation of chromatin reorganization and toxicological profiling. All projects are publicly available on GitHub: https://github.com/SFGLab 
+Recent advances in genomics, transcriptomics, epigenetics and systems biology have enabled an unprecedented capacity to collect and analyze biological data. These high-throughput technologies generate vast datasets that hold the key to understanding human health and disease. However, the volume, complexity, and heterogeneity of biomedical data pose significant challenges. To address them, machine learning (ML) and deep learning (DL) algorithms, have been increasingly used to extract meaningful biological insights. During the BioAI Hackathon at the University of Warsaw, participants explored novel AI-based solutions, including graph neural networks and large language models, for the following challenges: disease-gene prioritization, microbiome dynamics analysis, drug discovery for rare disease, study of splicing regulation, epigenomics data harmonization, investigation of chromatin reorganization and toxicological profiling. All projects are publicly available on GitHub: https://github.com/SFGLab
 
 ## Code Availability
 
 Team 1: Prioritizing disease-associated genes using graph neural networks: https://github.com/SFGLab/Team1_Gene_Prioritization_GNN 
 
-Team 2: AI-Driven Microbiome Analysis for Predicting Poultry Health and Performance: https://github.com/SFGLab/Team2_AI_Microbiome_Poultry
+Team 2: AI-driven microbiome analysis for predicting poultry gealth and performance: https://github.com/SFGLab/Team2_AI_Microbiome_Poultry
 
-Team 4: AI-Driven Prediction of Drug-Protein Interactions for Rare Diseases: https://github.com/SFGLab/Team4_AI_Drug_Targets_Rare_Diseases
+Team 4: AI-driven prediction of drug-protein interactions for rare diseases: https://github.com/SFGLab/Team4_AI_Drug_Targets_Rare_Diseases
 
 Team 5: Phasing structural variants using phased aligned data: https://github.com/SFGLab/SvPhaser
 
@@ -253,13 +253,13 @@ Team 7: Harmonization and imputation of epigenomics data – exposome: https://g
 
 Team 8: Discovering cell cycle phase-specific chromatin conformation changes based on single cell Hi-C and multi-omics data: https://github.com/SFGLab/Team8_PhaseSpecific_Chromatin_Changes
 
-Team 9: Advanced Modeling of Toxicological Profiles: https://github.com/SFGLab/Team9_Toxicological_Profiles
+Team 9: Advanced modeling of toxicological profiles: https://github.com/SFGLab/Team9_Toxicological_Profiles
 
 Team 10: Developing graph neural networks for gene regulation discovery: https://github.com/SFGLab/GNN4GRN-3D 
 
 ## Team 1: Prioritizing disease-associated genes using graph neural networks
 
-Medical genomics aims at finding genes related to diseases. Experimental studies are often laborious and expensive, therefore bioinformatics methods are useful in the prioritization of candidate disease-associated genes [@Shi2020-ll]. Recent bioinformatics methods based on machine learning, such as graph neural networks (GNNs), are increasingly popular [@Ata2021-hq; @Zitnik2024-gc]. GNNs are expected to offer improved performance by recognizing complex network patterns and leveraging additional biological information. The increasing number of GNN-based methods requires further understanding of how they compare to the state-of-the-art network propagation methods such as Random Walk with Restart [@Baptista2022-xb; @Kohler2008-vj] or PageRank [@Page1999-pi; @Chung2010-xy]. Compared to network propagation, the usability of GNNs is often limited due to high computational requirements and issues with interpretability. During the hackathon, we aimed at comparing the performance of graph neural networks with network propagation methods [@Cowen2017-ku]. As for the use case, we focused on genes involved in hereditary ataxia, a group of rare neurodegenerative disorders characterized by progressive loss of coordination and balance [@Perlman1993-bp; @Park2022-lb].
+Medical genomics aims at finding genes related to diseases. Experimental studies are laborious and expensive, therefore bioinformatics methods are useful in the prioritization of candidate disease-associated genes [@Shi2020-ll]. Recent network-based analysis methods based on machine learning, such as graph neural networks (GNNs), are increasingly popular [@Ata2021-hq; @Zitnik2024-gc; @Cowen2017-ku]. They recognize complex network patterns and can leverage additional biological information. The increasing number of machine learning methods requires further understanding of how they compare to the state-of-the-art network propagation methods such as Random Walk with Restart [@Baptista2022-xb; @Kohler2008-vj] or PageRank [@Page1999-pi; @Chung2010-xy]. Compared to network propagation, the usability of GNNs is often limited due to high computational requirements and difficulties with interpretability. During the hackathon, we aimed to compare the performance of graph neural networks with network propagation methods in disease-gene prioritization. For the disease of interest, we selected hereditary ataxia, a group of rare neurodegenerative disorders characterized by progressive loss of coordination and balance [@Perlman1993-bp; @Park2022-lb].
 
 ## Team 2: AI-Driven Microbiome Analysis for Predicting Poultry Health and Performance
 
@@ -298,10 +298,10 @@ The Gene regulatory networks (GRNs) play a pivotal role in revealing the extende
 # Methods
 
 ## Team 1: Prioritizing disease-associated genes using graph neural networks	
-We developed a framework to compare graph neural networks with network propagation algorithms, with the overarching objective of discovering particular aspects of these methodologies governing network-based disease-gene prioritization. To do this, we gathered biological interaction networks and phenotypic datasets from public databases. The protein-protein interaction network was created using protein-protein interaction data from the BioGRID database [@Oughtred2021-du] (https://thebiogrid.org/) and Reactome [@Milacic2024-lu] (https://reactome.org/) that capture both direct biophysical interactions and functional pathway relationships. In addition, we encompassed tissue-specific gene expression data from the GTEx portal [@GTEx_Consortium2013-uo] (https://www.gtexportal.org/home/) (“cerebellum”) and genetic variant information from the AstraZeneca PheWAS portal [@Wang2021-vb] (https://azphewas.com/).
-Disease-associated genes were extracted from the Human Phenotype Ontology databases (Human Phenotype Ontology) utilizing fifteen curated ataxia-related phenotypic descriptors spanning HP:0001251 through C0007758 (Table Team 1-1), accessed via Jackson Laboratory's standardized annotation framework, while secondary validation employed Genomics England's PanelApp curated hereditary ataxia panel comprising 185 genes to ensure clinical-grade gene-disease associations. Node feature engineering incorporated multi-dimensional biological evidence encompassing cerebellar-specific transcriptomic signatures, population-scale genetic variant statistics, and clinical phenotypic correlations to establish comprehensive gene characterization vectors that captured both molecular and clinical disease manifestations within the analytical framework.
 
-Three software packages for disease-gene prioritization were evaluated: geneDRAGNN [@Altabaa2022-wz], XGDAG [@Mastropietro2023-pj] and Random Walk with Restart (as implemented in MultiXrank) [@Baptista2022-xb]. The geneDRAGNN framework employs transfer learning that leverages pretrained disease-agnostic representations and gene embeddings generated through Node2Vec dimensionality reduction creating 107-dimensional latent space representations capturing both local neighborhood topology and global network structural properties. A two-layer Simplified Graph Convolution architecture, implemented via PyTorch Geometric, facilitated efficient multi-hop feature propagation through cross-entropy optimization and Adam-based parameter updating. The XGDAG framework integrated Positive-Unlabeled learning with GraphSAGE inductive representation learning, that addresses potential network sparsity through negative sampling mitigation. Random Walk with Restart served as the state-of-the-art network propagation methodology, which employs iterative probabilistic diffusion with transition probability 0.85 and restart probability 0.15 from known disease seeds until it achieves a steady-state gene scoring distribution. Model performance was assessed through precision, recall, F1-score, and area-under-curve. We ensure the accordance of our project with the FAIR principles by a well-documented GitHub repository. The overall workflow is illustrated in Figure Team 1-1, showcasing the steps from data collection and preprocessing to model training and evaluation.
+We developed a framework to compare graph neural networks with network propagation algorithms. Our objective was to discover particular aspects of these methodologies that drive the disease-gene prioritization. We used a protein-protein interaction network, created using protein-protein interaction data from the BioGRID database [@Oughtred2021-du] (https://thebiogrid.org/) and Reactome [@Milacic2024-lu] (https://reactome.org/), which include biophysical interactions and functional relationships. In addition, we encompassed tissue-specific gene expression data from the GTEx portal [@GTEx_Consortium2013-uo] (https://www.gtexportal.org/home/) (“cerebellum”) and genetic variant information from the AstraZeneca PheWAS portal [@Wang2021-vb] (https://azphewas.com/). Disease-associated genes were extracted from the Human Phenotype Ontology database (https://hpo.jax.org) utilizing fifteen ataxia-related HPO terms (Table Team 1-1). The secondary validation employed 185 curated hereditary ataxia genes from the Genomics England's PanelApp (https://panelapp.genomicsengland.co.uk).
+
+We used three software packages for disease-gene prioritization: geneDRAGNN [@Altabaa2022-wz], XGDAG [@Mastropietro2023-pj] and Random Walk with Restart (as implemented in MultiXrank) [@Baptista2022-xb]. The geneDRAGNN framework employs transfer learning that leverages pretrained disease-agnostic representations and gene embeddings generated through Node2Vec dimensionality reduction creating 107-dimensional latent space representations capturing both local neighborhood topology and global network structural properties. A two-layer Simplified Graph Convolution architecture, implemented via PyTorch Geometric, facilitated efficient multi-hop feature propagation through cross-entropy optimization and Adam-based parameter updating. The XGDAG framework integrated Positive-Unlabeled learning with GraphSAGE inductive representation learning. Random Walk with Restart served as the state-of-the-art network propagation methodology, which employs iterative probabilistic diffusion with transition probability 0.85 and restart probability 0.15 from known disease genes. We aimed to assess the models' performance through precision, recall, F1-score, and area-under-curve. The overall workflow is illustrated in Figure Team 1-1, showcasing the steps from data collection and preprocessing to model training and evaluation.
 
 ## Team 2: AI-Driven Microbiome Analysis for Predicting Poultry Health and Performance
 
@@ -418,11 +418,11 @@ Training employed the Adam optimizer coupled with an adaptive learning rate sche
 
 Despite challenges with software usability and the limited timeframe during the hackathon, we ran geneDRAGNN (a graph neural network) and MultiXrank (a network propagation method). We retrained geneDRAGNN using disease-specific features shows that 
 
-We compiled two complementary sets of Ataxia genes and mapped them to the protein-protein interaction network. Using Node2Vec, we generated 107-dimensional embeddings for 13,000+ nodes. A balanced training set of 53 known and 53 control genes was used to train a two-layer SGConv model. Final validation metrics included 72% accuracy, 78% precision and AUC of 0.81. Outputs were saved as CSVs and the model checkpoint is publicly available.
+We compiled two complementary sets of Ataxia genes and mapped them to the protein-protein interaction network. Using Node2Vec, we generated 107-dimensional embeddings for 14,000 genes. A balanced training set of 53 known and 53 control genes was used to train a two-layer SGConv model. Final validation metrics included 72% accuracy, 78% precision and AUC of 0.81.
 
 We were not able to utilize XGDAG due to challenges in reproducing a functional environment for the software, across systems from a Windows laptop to a Linux HPC. The provided Conda setups were not functional and we could not resolve all dependencies. We requested the authors provide a containerized, platform-independent solution. We were able to run the tool by changing the XGDAG code, which required several additional input files to be generated to adapt to be ataxia-specific, however, we were not able to successfully generate the ranking of the highest-scoring genes for ataxia.
 
-Our results show that both strategies produce distinct sets of top-ranked genes, which suggests that they might provide complementary results. Table Team 1-2 shows the list of the top 20 highest-scoring genes predicted to be related to ataxia using geneDRAGNN, geneDRAGNN re-trained on the ataxia-specific data and MultiXrank. To conclude, a combined strategy that leverages the interpretability and scalability of network propagation with graph neural networks may yield novel insights for the identification of new disease-associated genes.
+Table Team 1-2 shows the list of the top 20 highest-scoring genes predicted to be related to ataxia using geneDRAGNN, geneDRAGNN re-trained on the ataxia-specific data and MultiXrank. Our results show that both strategies produce distinct sets of top-ranked genes, which suggests that they might provide complementary results. To conclude, a combined strategy that leverages the interpretability and scalability of network propagation with graph neural networks may yield novel insights for the identification of new disease-associated genes.
 
 
 ## Team 2: AI-Driven Microbiome Analysis for Predicting Poultry Health and Performance
@@ -630,7 +630,7 @@ The BioAI Hackathon demonstrated the immense potential of AI methods, particular
 
 Each project developed during this hackathon has laid a strong foundation for continued advancement in rare disease research using artificial intelligence. Future hackathons can build upon these efforts by focusing on: refining model interpretability and transparency; integrating multi-omics and clinically validated data; improving usability through containerization and low-code interfaces; and promoting cross-team modularity, reproducibility, and open dissemination. The sections below outline each team’s forward-looking vision, emphasizing practical next steps and highlighting potential synergies across projects that can guide the next wave of collaborative innovation.
 
-Team 1 focused on gene prioritization with a specific emphasis on ataxia, leveraging graph-based machine learning models such as XGDAG and geneDRAGNN. While they successfully retrained one of the models from the geneDRAGNN tool on an ataxia-specific dataset, their future work aims to further fine-tune the models using disease-specific input data. They also plan to benchmark these models against traditional network propagation methods using leave-one-out cross-validation, comparing the top-ranked gene predictions. For biological interpretability and clinical relevance, they propose employing explainable AI techniques. A key focus is ensuring reproducibility and usability by containerizing the workflow.
+Team 1 focused on disease-gene prioritization using graph-based machine learning algorithms. While they successfully retrained one of the models from the geneDRAGNN tool on an ataxia-specific dataset, their future work aims to further fine-tune the models using other disease-specific input data (e.g., gene expression or miRNA-protein regulation). They also plan to benchmark these models against traditional network propagation methods using leave-one-out cross-validation and compare the top-ranked gene predictions. Furthermore, they propose employing explainable AI techniques for biological interpretability and clinical relevance.
 
 Team 4 developed a machine learning framework for drug repurposing in cystic fibrosis, with future plans to extend their work to include graph neural networks for better topological representation of molecular structures. Moreover, to improve model performance, Team4 plans to expand the dataset used for the training of the deep learning model and to increase the epochs included in the training process. They also plan to tailor their models to account for the most frequent protein mutations observed in cystic fibrosis, further anchoring their predictions in real clinical data. Once training is complete, the team envisions deploying an interactive web platform to support non-technical researchers and clinicians in identifying new therapeutic candidates. This commitment to clinical relevance and user-centered design parallels the usability goals highlighted by Team 1 and the data integration strategies proposed by Team 8, opening opportunities for shared infrastructure and downstream deployment across rare disease applications. 
 

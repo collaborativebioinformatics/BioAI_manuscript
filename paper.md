@@ -1,5 +1,5 @@
 ---
-title: 'AI for Biomedicine: Highlights from the BioAI Hackathon at University of Warsaw'
+title: 'AI for Biomedicine: Highlights from the first BioAI Hackathon at University of Warsaw'
 tags:
   - biohackathon
   - deep learning

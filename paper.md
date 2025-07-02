@@ -137,9 +137,9 @@ authors:
     affiliation: 38
     
 affiliations:
-  - name: Laboratory of Bioinformatics and Computational Genomics, Faculty of Mathematics and Information Science, Warsaw University of Technology, Koszykowa 75, 00-662, Warsaw, Poland
+  - name: Faculty of Mathematics and Information Science, Warsaw University of Technology, Warsaw, Poland
     index: 1
-  - name: Laboratory of Functional and Structural Genomics, Centre of New Technologies, University of Warsaw, Stefana Banacha 2c, 02-097, Warsaw, Poland
+  - name: Centre of New Technologies, University of Warsaw, Warsaw, Poland
     index: 2
   - name: Laboratory of Brain Imaging, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, Pasteur 3 Str, Warsaw, Poland
     index: 3

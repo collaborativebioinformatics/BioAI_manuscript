@@ -223,7 +223,7 @@ affiliations:
 date: May 15, 2025
 bibliography: paper.bib
 authors_short: Ahmad R. M., Denkiewicz M., Gupta R., Gadakh S., Kubica J., Nadeem A., Olszewska A. M., Rossi F. \emph{et al.}
-biohackathon_name: "BioAI Hackathon"
+biohackathon_name: "BioAI Hackathon 2025"
 event: BioAIUWarsaw
 biohackathon_url: "https://cent.uw.edu.pl/bioai-hackathon-at-the-university-of-warsaw/"
 biohackathon_location: "Warsaw, Poland"
